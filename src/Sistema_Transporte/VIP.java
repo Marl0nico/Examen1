@@ -54,4 +54,5 @@ public class VIP extends Servicio{
         System.out.println("¿Trae consigo una maleta adicional?:"+this.isMaletAdicional());
         System.out.println("Costo adicional por el servicio:"+this.getCostoAdicional());
     }
+
 }

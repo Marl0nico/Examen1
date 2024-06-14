@@ -21,16 +21,14 @@ public class Main {
         ruta2.mostrarDatos();
         ruta3.setNombreRuta("Quito-Puyo");
         ruta3.setCosto(15);
-        //ruta1.mostrarDatos();
-        //ruta3.mostrarDatos();
-        //ruta4.mostrarDatos();
+        ruta1.mostrarDatos();
+        ruta3.mostrarDatos();
+        ruta4.mostrarDatos();
         //objeto ticket
         Ticket ticket1=new Ticket("Normal", 92, 4);
         ticket1.mostrarDatos();
         //objeto normal
         Normal normal1=new Normal("Ventana", false, false, 0);
         normal1.mostrarDatos();
-        //datos cliente 2
-        
     }
 }
