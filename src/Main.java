@@ -1,4 +1,7 @@
 import Sistema_Transporte.*;
+
+import javax.imageio.stream.ImageOutputStream;
+
 public class Main {
     public static void main(String[] args) {
         //datos cliente 1
@@ -30,5 +33,10 @@ public class Main {
         //objeto normal
         Normal normal1=new Normal("Ventana", false, false, 0);
         normal1.mostrarDatos();
+        Pasajero pasajero2=new Pasajero("Juan", 1574230231, "Efectivo");
+        pasajero2.mostrarDatos();
+        ruta2.mostrarDatos();
+        Ticket ticket2=new Ticket("VIP",22.75, 1);
+        ticket2.mostrarDatos();
     }
 }
