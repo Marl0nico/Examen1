@@ -36,13 +36,12 @@ public class Main {
         pasajero2.mostrarDatos();
         Ruta ruta2=new Ruta("Quito-Tulcán", 17.5);
         ruta2.mostrarDatos();
-        double total=ruta2.getCosto()*2;
+        double total=(ruta2.getCosto()*1.3)*2;
         Ticket ticket2=new Ticket("VIP", total, 2);
         ticket2.mostrarDatos();
         double recargo=ruta2.getCosto()*0.3;
         VIP vip1=new VIP("Calefacción y wi-fi", 2, true, 5, recargo);
         vip1.mostrarDatos();
         System.out.println("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*");
-
     }
 }
