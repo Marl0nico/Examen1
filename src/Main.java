@@ -43,5 +43,41 @@ public class Main {
         VIP vip1=new VIP("Calefacción y wi-fi", 2, true, 5, recargo);
         vip1.mostrarDatos();
         System.out.println("/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*/*");
+        //datos cliente 3
+        Pasajero pasajero3=new Pasajero();
+        pasajero3.setNombrePasajero("Carlos Benavides");
+        pasajero3.setNcédula(1741203659);
+        pasajero3.setMétodoPago("Transferencia");
+        pasajero3.mostrarDatos();
+        Ruta ruta3=new Ruta();
+        ruta3.setNombreRuta("Quito-Puyo");
+        ruta3.setCosto(15);
+        ruta3.mostrarDatos();
+        Ticket ticket3=new Ticket();
+        ticket3.setTipoTicket("VIP");
+        ticket3.setnPasajeros(4);
+        double total1=(ruta3.getCosto()*1.3)*4;
+        ticket3.setValorFinal(total1);
+        ticket3.mostrarDatos();
+        VIP vip2=new VIP();
+        vip2.setServiciosAdicionales("Calefacción y wi-fi");
+        vip2.setMaletas(1);
+        vip2.setMaletAdicional(false);
+        vip2.setCostoAdicional(0);
+        vip2.setRecargo(ruta3.getCosto()*0.3);
+        vip2.setRecargo(0);
+        vip2.mostrarDatos();
+        System.out.println("//////////////////////////////////////////");
+        //datos cliente 4
+        Pasajero pasajero4=new Pasajero("Karla Sánchez", 1759632008, "Tarjeta de débito");
+        pasajero4.mostrarDatos();
+        Ruta ruta4=new Ruta("Quito-Riobamba", 17.5);
+        ruta4.mostrarDatos();
+        double total3= ruta4.getCosto()*2;
+        Ticket ticket4=new Ticket("Normal", total3, 2);
+        ticket4.mostrarDatos();
+        Normal normal2=new Normal("Pasillo", true, true, 5);
+        normal2.mostrarDatos();
+        System.out.println("//////////////////////////////////////////");
     }
 }
