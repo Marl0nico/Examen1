@@ -1,5 +1,4 @@
 package Sistema_Transporte;
-
 public class Ruta extends Sistema_de_transportes{
     String nombreRuta;
     double costo;

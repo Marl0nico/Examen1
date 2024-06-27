@@ -5,8 +5,8 @@ public class Ticket extends Ruta{
     int nPasajeros;
     public Ticket(String tipoTicket, double valorFinal, int nPasajeros) {
         this.tipoTicket = tipoTicket;
-        this.valorFinal = valorFinal;
         this.nPasajeros = nPasajeros;
+        this.valorFinal = valorFinal;
     }
     public Ticket() {
     }
@@ -16,17 +16,17 @@ public class Ticket extends Ruta{
     public void setTipoTicket(String tipoTicket) {
         this.tipoTicket = tipoTicket;
     }
-    public double getValorFinal() {
-        return valorFinal;
-    }
-    public void setValorFinal(double valorFinal) {
-        this.valorFinal = valorFinal;
-    }
     public int getnPasajeros() {
         return nPasajeros;
     }
     public void setnPasajeros(int nPasajeros) {
         this.nPasajeros = nPasajeros;
+    }
+    public double getValorFinal() {
+        return valorFinal;
+    }
+    public void setValorFinal(double valorFinal) {
+        this.valorFinal = valorFinal;
     }
     public void mostrarDatos(){
         System.out.println("Detalles de ticket comprado");
