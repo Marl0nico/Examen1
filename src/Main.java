@@ -79,5 +79,40 @@ public class Main {
         Normal normal2=new Normal("Pasillo", true, true, 5);
         normal2.mostrarDatos();
         System.out.println("//////////////////////////////////////////");
+        //datos cliente 5
+        Pasajero pasajero5=new Pasajero();
+        pasajero5.setNombrePasajero("Marcela Guevara");
+        pasajero5.setNcédula(1758759985);
+        pasajero5.setMétodoPago("Tarjeta de crédito");
+        pasajero5.mostrarDatos();
+        Ruta ruta5=new Ruta();
+        ruta5.setNombreRuta("Quito-Puyo");
+        ruta5.setCosto(15);
+        ruta5.mostrarDatos();
+        Ticket ticket5=new Ticket();
+        ticket5.setTipoTicket("Normal");
+        ticket5.setnPasajeros(5);
+        double total2=ruta5.getCosto()*5;
+        ticket5.setValorFinal(total2);
+        ticket5.mostrarDatos();
+        Normal normal3=new Normal();
+        normal3.setTipoAsiento("Adelante");
+        normal3.setEspacioMaleta(true);
+        normal3.setMaletAdicional(true);
+        normal3.setCostoExtra(5);
+        normal3.mostrarDatos();
+        System.out.println("//////////////////////////////////////////");
+        //datos cliente 6
+        Pasajero pasajero6=new Pasajero("Adrián Gutierrez", 1758521140, "Efectivo");
+        pasajero6.mostrarDatos();
+        Ruta ruta6=new Ruta("Quito-Guayaquil", 20);
+        ruta6.mostrarDatos();
+        double total4=ruta6.getCosto()*1.3;
+        Ticket ticket6=new Ticket("VIP", total4, 1);
+        ticket6.mostrarDatos();
+        double recargo2=ruta6.getCosto()*0.3;
+        VIP vip3=new VIP("Calefacción y wi-fi", 2, true, 5, recargo2);
+        vip3.mostrarDatos();
+        System.out.println("//////////////////////////////////////////");
     }
 }
